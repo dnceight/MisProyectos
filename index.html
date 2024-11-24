@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Web - Daniela</title>
+  <!-- Aquí estamos vinculando la hoja de estilos CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Encabezado con el menú de navegación -->
+  <header>
+    <nav>
+      <ul>
+        <!-- Enlaces de navegación para las diferentes secciones de la página -->
+        <li><a href="#acerca">Acerca de</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main>
+    <!-- Sección Acerca de mí -->
+    <section id="acerca" class="section">
+      <h1>¡Hola! Soy Daniela</h1>
+      <p>¡Bienvenida a mi página! Soy una soñadora, tengo 19 años y actualmente estoy en mi segundo semestre de carrera. Me apasiona el desarrollo personal y la espiritualidad, y además, trabajo en un banco. Este es un espacio donde quiero compartir mis proyectos y conectar contigo.</p>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="section">
+      <h2>Proyectos</h2>
+      <div class="project-grid">
+        <!-- Aquí describimos algunos proyectos que he realizado -->
+        <div class="project">
+          <h3>Portafolio</h3>
+          <p>Un sitio donde podrás ver mis trabajos más recientes. Es mi forma de mostrar lo que he aprendido.</p>
+        </div>
+        <div class="project">
+          <h3>Formulario de Contacto</h3>
+          <p>He creado un formulario que me permitirá recibir mensajes directamente. ¡Estoy feliz de poder conectarme contigo!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Contacto con el Formulario -->
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <!-- Aquí está el formulario de contacto con el método POST -->
+      <form action="https://formspree.io/f/xyzyporo" method="POST">
+        <!-- Campo de Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <!-- Campo de Email -->
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="tu.email@dominio.com" required>
+
+        <!-- Campo de Mensaje -->
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" rows="4" required></textarea>
+
+        <!-- Botón de Envío -->
+        <button type="submit">Enviar</button>
+      </form>
+      <p>¡Espero tu mensaje con mucho cariño! 💖</p>
+    </section>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer>
+    <p>&copy; 2024 Daniela. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
